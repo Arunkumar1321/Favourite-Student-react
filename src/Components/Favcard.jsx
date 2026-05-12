@@ -29,7 +29,7 @@ const Favcard =()=>{
            {
                 fstd.map(function(item){
                     return(
-                        <div className="grid grid-cols-4 justify-around bg-white rounded-md m-2 items-center gap-10 p-3">
+                        <div className="grid grid-cols-4 justify-around bg-white rounded-md m-2 items-center gap-10 p-3" key={item.stdid}>
                             <h1 className="text-xl font-extrabold text-green-700">Name:{item.std}</h1>
                             <p className="text-cyan-600 ">Id:{item.stdid}</p>
                             <p className="text-orange-600 ">Grade:{item.grade}</p>
@@ -38,7 +38,7 @@ const Favcard =()=>{
                     )
                 })
             }
-            {fstd.length==0?"":<div className="text-center">
+            {fstd.length===0?"":<div className="text-center">
             <button className="p-2 bg-blue-600 text-white rounded-md m-2 "><Link to={"/"}>Go Back</Link></button> </div>}
           </div>
     )

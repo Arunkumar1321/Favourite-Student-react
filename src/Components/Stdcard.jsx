@@ -23,7 +23,7 @@ const Stdcard =()=>{
                 stdlist.map(function(item){
                     return(
                         
-                        <div className="shadow-xl w-82 bg-white p-2 rounded-md m-2 text-center flex flex-col gap-4 relative flex-grow basis-3/5 md:basis-1/4 ">
+                        <div key={item.stdid} className="shadow-xl w-82 bg-white p-2 rounded-md m-2 text-center flex flex-col gap-4 relative flex-grow basis-3/5 md:basis-1/4 ">
                             <h1 className="text-xl font-extrabold m-4">{item.std}</h1>
                             <p className="text-cyan-600">{item.stdid}</p>
                             <p className="text-orange-600">{item.grade}</p>
