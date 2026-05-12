@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# 🎓 Student Favourite List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React JS application to manage and favourite students, built with React Router, Context API, and Tailwind CSS.
 
-## Available Scripts
+## 🚀 Live Demo
+[View on Vercel](https://favourite-student-react-phi.vercel.app/)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📌 Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Add students with Name, Roll Number, and Grade
+- View all students in a dynamic card layout
+- Add students to a Favourite list
+- Remove students from the Favourite list
+- Prevents duplicate students from being added
+- Form validation using Regex
+- Navigate between pages without page reload
+- Displays avatar initials for each student
+- Shows total student count and favourite count
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Technology | Usage |
+|---|---|
+| React JS | Frontend framework |
+| React Router DOM | Page navigation |
+| Context API | Global state management |
+| Tailwind CSS | Styling |
+| Vercel | Deployment |
+src/
+├── Components/
+│   ├── ListProvider.jsx   # Context provider — global state
+│   ├── Addstd.jsx         # Add student form
+│   ├── Stdcard.jsx        # Student list cards
+│   └── Favcard.jsx        # Favourite students page
+├── App.js                 # Main app with routing
+└── index.js               # Entry point
+---
 
-### `npm run build`
+## ⚙️ Installation & Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Navigate into the project
+cd your-repo-name
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Install dependencies
+npm install
 
-### `npm run eject`
+# Start the development server
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📋 Form Validation Rules
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Field | Rule | Example |
+|---|---|---|
+| Name | Cannot be empty | Arun Kumar |
+| Roll Number | 3 Letters + 4 Digits | CSC2401 |
+| Grade | 1-2 digits + dot + 2 digits | 9.35 |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 📖 Concepts Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `createContext()` — creates global context
+- `useContext()` — accesses context in any component
+- `useState()` — manages local and global state
+- `useContext()` — accesses context in any component
+- `map()` — renders student list dynamically
+- `filter()` — removes student from favourites
+- `some()` — prevents duplicate favourites
+- `trim()` — removes whitespace from inputs
+- `preventDefault()` — stops form page refresh
+- Regex — validates roll number and grade format
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 🖼️ Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Student List Page
+![Student List](add-your-screenshot-here)
 
-### Analyzing the Bundle Size
+### Favourite Students Page
+![Favourites](add-your-screenshot-here)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 👨‍💻 Author
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Your Name**
+- GitHub: [https://github.com/Arunkumar1321](https://github.com/Arunkumar1321/Favourite-Student-react/tree/main)
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📄 License
+This project is open source and available under the [MIT License](LICENSE)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📂 Project Structure
