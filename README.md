@@ -30,6 +30,8 @@ A React JS application to manage and favourite students, built with React Router
 | Context API | Global state management |
 | Tailwind CSS | Styling |
 | Vercel | Deployment |
+
+## 🧱 Project Structure
 src/
 ├── Components/
 │   ├── ListProvider.jsx   # Context provider — global state
